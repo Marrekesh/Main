@@ -25,5 +25,11 @@
     "url": "https://github.com/Marrekesh/Main/issues"
   },
   "homepage": "https://github.com/Marrekesh/Main#readme",
-  "description": ""
+  "description": "",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
