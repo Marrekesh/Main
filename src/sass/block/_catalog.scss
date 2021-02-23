@@ -6,7 +6,7 @@
         align-items: center;
         margin-bottom: 59px;
     }
-    &__tabs-item {
+    &__tab {
         display: block;
         width: 220px;
         height: 50px;
@@ -33,11 +33,21 @@
             color: #fff;
         }       
     }
+    &__items {
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
     &-item {
         width: 300px;
         height: 440px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
         &__img {
             display: block;
             margin: 0 auto;
@@ -95,6 +105,60 @@
             line-height: 1.2;
             font-weight: 700;
             color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            transform: translateX(-100%);
+            margin-right: 0px;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__switch {
+            position: relative;
+            width: 50%;
+            padding-left: 18px;
+            padding-right: 20px;
+            transform: translateX(0%);
+            list-style-type: none;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li {
+                position: relative;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #555555;
+                margin-bottom: 20px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    top: 6px;
+                    left: -14px;
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: #c70101;
+            bottom: 0;
+            text-transform: uppercase;
         }
     }  
 }
