@@ -10,4 +10,16 @@ $('.carousel__inner').slick({
     $(this)
       .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
       .closest('div.container').find('div.catalog__items').removeClass('catalog__items_active').eq($(this).index()).addClass('catalog__items_active');
-});
+  });
+
+  function toggleSlide(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+            $('.catalog-item__switch').eq(i).toggleClass('catalog-item__switch_active');
+        })
+    });
+  };
+  toggleSlide('.catalog-item__link');
+  toggleSlide('.catalog-item__back');

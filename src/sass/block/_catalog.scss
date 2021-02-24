@@ -1,5 +1,5 @@
 .catalog {
-    padding: 27px 0 101px 0;
+    padding: 27px 0 87px 0;
     &__tabs {
         display: flex;
         justify-content: center;
@@ -114,6 +114,7 @@
             width: 50%;
             transform: translateX(-100%);
             margin-right: 0px;
+            transition: 0.5s all;
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;
@@ -126,9 +127,11 @@
             padding-right: 20px;
             transform: translateX(0%);
             list-style-type: none;
+            transition: 0.5s all;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
+                // transition: all 0.45s;
             }
             li {
                 position: relative;
