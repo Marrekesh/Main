@@ -30,7 +30,10 @@
         font-weight: 700;
         color: #ffffff;
         text-decoration: none;
-        margin-bottom: 8px;  
+        margin-bottom: 8px;
+        &:hover {
+            color: #ffffff;
+        }  
     }
     &__call {
         display: flex;

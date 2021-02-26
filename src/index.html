@@ -15,7 +15,7 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo">
-                    <img src="icon/logo.png" alt="logo">
+                   <a href="#"><img src="icon/logo.png" alt="logo"></a> 
                 </div>
                 <div class="header__official">
                     Официальный представитель
@@ -23,7 +23,7 @@
                 </div>
                 <div class="header__call">
                     <a href="tel:+74999228974" class="header__number">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -47,7 +47,7 @@
                         на все вопросы
                     </div>
                 </div>    
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__catalog">
                     или 
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -107,7 +107,7 @@
                 <input name="name" required placeholder="Ваше имя" type="name">
                 <input name="phone" required placeholder="Ваш телефон" type="number">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
             </form>    
         </div>
     </section>
@@ -140,7 +140,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/p_polar.png" alt="catalog_polar" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar ZP4</div>
                             <div class="catalog-item__description">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a  href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -416,7 +416,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/p_polar.png" alt="catalog_polar" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar ZP4</div>
                             <div class="catalog-item__description">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a  href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -498,6 +498,51 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195992!2d37.644807315931104!3d55.76839498055754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1614244207192!5m2!1sru!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="footer__block">
+            <h2 class="footer__subtitle">Москва, Мясницкий проезд, д.3с1</h2>
+            <a href="tel:84999228974" class="footer__mobile">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-href"><img src="icon/social_facebook.png" alt="facebook"></a>
+                <a href="#" class="footer__social-href"><img src="icon/instagram.png" alt="instagram"></a>
+                <a href="#" class="footer__social-href"><img src="icon/pinterest.png" alt="pinterest"></a>    
+            </div>
+        </div>
+    </footer>
+    
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
+            <form class="form">
+                <input name="name" required placeholder="Ваше имя" type="name">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
+            </form>    
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__description">Пульсометр Polar FT1</div>
+            <form class="form">
+                <input name="name" required placeholder="Ваше имя" type="name">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_main">Купить</button>    
+            </form>    
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
