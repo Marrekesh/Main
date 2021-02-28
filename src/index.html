@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -103,11 +103,11 @@
             <div class="consultation__description">Просто заполните форму заявки<br> 
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="form">
-                <input name="name" required placeholder="Ваше имя" type="name">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
+            <form class="form" id="feed-form">
+                <input name="name" placeholder="Ваше имя" type="name">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
             </form>    
         </div>
     </section>
@@ -517,9 +517,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
             <form class="form">
-                <input name="name" required placeholder="Ваше имя" type="name">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="name">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>    
             </form>    
         </div>
@@ -529,9 +529,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__description">Пульсометр Polar FT1</div>
             <form class="form">
-                <input name="name" required placeholder="Ваше имя" type="name">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="name">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_main">Купить</button>    
             </form>    
         </div>
@@ -543,10 +543,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icon/chevron-circle-up-solid.svg" alt="chevron">
+    </a>
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

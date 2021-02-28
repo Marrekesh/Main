@@ -17,4 +17,13 @@
         color: #ffffff;
         margin-bottom: 36px;
     }
+    .error {
+        border: solid 1px red;
+    }
+    label.error {
+        margin-bottom: 15px;
+        color: #fff;
+        text-align: center;
+        border: none;
+    }
 }

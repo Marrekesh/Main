@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     width: 380px;
-    height: 400px;
+    min-height: 400px;
     background-color: #f2f2f2;
     padding: 38px 40px 40px 40px;
     &__close {
@@ -41,7 +41,15 @@
         margin-bottom: 25px;
     }
     &_mini {
-        height: 140px;
+        min-height: 140px;
+    }
+    .error {
+        border: solid 1px red;
+    }
+    label.error {
+        margin-bottom: 15px;
+        text-align: center;
+        border: none;
     }
 }
 #consultation, #order, #thanks {
