@@ -11,10 +11,26 @@
         flex-direction: column;
         align-items: center;
         max-width: 238px;
-        img {
-            margin-bottom: 38px;
+    }    
+    &__img {
+        margin-bottom: 38px;
+        &_animated-heart {
+            &:hover {
+               animation: heartbeat 2s infinite; 
+            }  
+        }
+        &_animated-shoe {
+            &:hover {
+               animation: shoerun 2s infinite; 
+            }   
+        }
+        &_animated-cup {
+            &:hover {
+                animation: cuprot 2s infinite;
+            }
         }
     }
+    
     &__subtitle {
         margin-bottom: 25px;
         font-size: 18px;

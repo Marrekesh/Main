@@ -1,0 +1,31 @@
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes shoerun {
+    from {
+       transform: translateX(1px); 
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(-11px); 
+    }
+    
+}
+@keyframes cuprot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

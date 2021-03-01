@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -60,18 +61,18 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__section">
-                    <img src="icon/cup_73.png" alt="cup">
+                    <img src="icon/cup_73.png" alt="cup" class="advantages__img advantages__img_animated-cup">
                     <div class="advantages__subtitle">
                       Делимся опытом    
                     </div>
                     <div class="advantages__description">
                         Наши сотрудники всегда готовы поделиться своим опытом, 
-                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к 
+                        так как сами бегают полумарафоны, переплыли Босфор, готовится к 
                         соревнованиям по триатлону!
                     </div>
                 </div>
                 <div class="advantages__section">
-                    <img src="icon/heart_72.png" alt="heart">
+                    <img src="icon/heart_72.png" alt="heart" class="advantages__img advantages__img_animated-heart">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье    
                     </div>
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="advantages__section">
-                    <img src="icon/shoe_71.png" alt="shoe">
+                    <img src="icon/shoe_71.png" alt="shoe" class="advantages__img advantages__img_animated-shoe">
                     <div class="advantages__subtitle">
                         Учим бегать    
                     </div>
@@ -452,7 +453,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">Отзывы Клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
                 <img src="img/client_1.png" alt="client" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__tittle">Ирина Иванченко</div>
@@ -468,7 +469,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__item">
+            <div class="reviews__item animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
                 <img src="img/client_2.png" alt="client_2" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__tittle">Иван Сёмочкин</div>
@@ -482,7 +483,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__item">
+            <div class="reviews__item animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
                 <img src="img/client_3.png" alt="client_3" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__tittle">Юлия Дашкина</div>
@@ -553,6 +554,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
