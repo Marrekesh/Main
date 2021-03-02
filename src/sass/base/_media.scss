@@ -1,14 +1,128 @@
 @media only screen and (max-width: 1200px) {
-    .consultation__header {
-        text-align: center;
-    }
-    .consultation__description {
-        text-align: center;
-    }
-    .form {
-        margin: 0 auto;
-    }
+    .consultation {
+        &__header {
+            text-align: center;
+        }
+        &__description {
+            text-align: center;
+        }
+        .form {
+            margin: 0 auto;
+        }
+    }    
 }
 @media only screen and (max-width: 991px) {
-    
+    .promo {
+        padding-right: 20px;
+        padding-left: 20px;
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+     .header {
+        &__logo {
+            width: 215px;
+        }
+    }
+    .advantages {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .catalog {
+        padding-right:20px;
+        padding-left: 20px;
+    }
+    .reviews {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .consultation {
+        padding-right: 20px;
+        padding-left: 20px;
+        &__header {
+            font-size: 30px;
+        }
+    }
+    .carousel {
+        .slick-dots {
+            margin-top: 20px;
+            li {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+                button {
+                    font-size: 0;
+                    line-height: 0;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background: transparent;
+                    &:before {
+                        content: '•';
+                        font-size: 60px;
+                        line-height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 1500%;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        opacity: .25;
+                        color: black;
+                    }
+                } 
+            }     
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 200px;
+        }
+        &__items {
+            flex-direction: column;
+            align-items: center;
+            .catalog-item {
+                width: 410px;
+            }
+        }
+    }
+    .footer {
+        &__block {
+            padding: 28px 38px 28px 38px;
+            width: 360px;
+            height: 215px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__mobile {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__social-href {
+            width: 40px;
+            height: 40px;
+            img {
+                height: 20px;
+            }
+        }
+    }  
 }

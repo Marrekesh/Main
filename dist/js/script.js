@@ -4,7 +4,15 @@ $(document).ready(function(){
       adaptiveHeight: true,
       prevArrow: `<button type="button" class="slick-prev"><img src="icon/chevron_left_solid_980.png"></img></button>`,
       nextArrow: '<button type="button" class="slick-next"><img src="icon/chevron_right_solid_982.png"></button>',
-      
+      responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                dots: true,
+                arrows: false
+            }
+        }
+    ]  
     });
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -95,4 +103,5 @@ $(document).ready(function(){
     });
 
     new WOW().init();
+
 });
